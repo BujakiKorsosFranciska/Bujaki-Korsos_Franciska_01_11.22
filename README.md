@@ -9,3 +9,5 @@ Egy személy/család havi kiadásai és bevételei
 6 - Bevétel törlése
 Hozzá adásnál az adatok mentésre kerülnek a listában is
 Törlésnél az adatok törölve lesznek a listából
+Az összegek forintban lesznek megadva egész számként
+Az összeg mellett fel lesz tüntetve hogy a kiadás/bevétel miből származik
