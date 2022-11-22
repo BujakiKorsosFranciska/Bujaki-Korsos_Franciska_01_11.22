@@ -7,3 +7,5 @@ Egy személy/család havi kiadásai és bevételei
 4 - Új bevétel hozzá adása
 5 - Kiadás törlése
 6 - Bevétel törlése
+Hozzá adásnál az adatok mentésre kerülnek a listában is
+Törlésnél az adatok törölve lesznek a listából
