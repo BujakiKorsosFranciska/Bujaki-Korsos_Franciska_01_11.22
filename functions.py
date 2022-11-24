@@ -33,5 +33,6 @@ def BevetelBetoltes():
 
 def BevetelKiir():
     system('cls')
-    print(f'{bevetelek} Ft')
+    print('Bevételek')
+    print(bevetelek)
     input()
