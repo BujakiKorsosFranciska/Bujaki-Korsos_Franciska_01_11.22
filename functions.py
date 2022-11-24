@@ -15,6 +15,7 @@ def menu():
     print('\t 6 - Bevétel törlése')
     print('\t 7 - Kiadások összesen')
     print('\t 8 - Bevételek összesen')
+    return input('Választás: ')
 
 def KiadasBetoltes():
     file1=open(kiadas, 'r', encoding='utf-8')
