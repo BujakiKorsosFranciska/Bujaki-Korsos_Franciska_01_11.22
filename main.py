@@ -1,5 +1,7 @@
 from functions import *
 from os import system
+KiadasBetoltes()
+BevetelBetoltes()
 
 valasztas=''
 while valasztas!='0':

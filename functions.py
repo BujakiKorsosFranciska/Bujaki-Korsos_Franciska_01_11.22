@@ -32,5 +32,6 @@ def BevetelBetoltes():
     file2.close()
 
 def BevetelKiir():
-    for i in range(0,len(bevetelek)):
-        print(f'\t{bevetelek[i]} Ft')
+    system('cls')
+    print(f'{bevetelek} Ft')
+    input()
