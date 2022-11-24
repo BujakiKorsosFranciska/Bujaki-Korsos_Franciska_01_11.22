@@ -42,3 +42,11 @@ def KiadasKiir():
     print('KIADÁSOK')
     print(kiadasok)
     input()
+
+def ujKiadas():
+    system('cls')
+    print('ÚJ EREDMÉNY')
+    bekertMegnevezés=input('Kiadás megnevezése: ')
+    bekertOsszeg=input('Összeg: ')        
+    #kiadasMentes(bekertMegnevezes,bekertOsszeg)
+
