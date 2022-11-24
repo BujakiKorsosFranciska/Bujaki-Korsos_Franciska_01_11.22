@@ -1,4 +1,2 @@
-bevetelekOsszeg=[]
-bevetelekMegnevezes=[]
-kiadasokOsszeg=[]
-kiadasokMegnevezes=[]
+bevetelek=[]
+kiadasok=[]

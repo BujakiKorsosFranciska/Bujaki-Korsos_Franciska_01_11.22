@@ -1,4 +1,4 @@
-from data import bevetelekOsszeg, bevetelMegnevezes, kiadadOsszeg, kiadasMegnevezes
+from data import bevetelek, kiadasok
 from os import system
 kiadas='kiadasok.txt'
 bevetel='bevetelek.txt'
@@ -15,3 +15,10 @@ def menu():
     print('\t 6 - Bevétel törlése')
     print('\t 7 - Kiadások összesen')
     print('\t 8 - Bevételek összesen')
+
+def KiadasBetoltes():
+    file1=open(kiadas, 'r', encoding='utf-8')
+    for row in file1:
+        darabolt1=row.strip().split(';')
+        kiadasok.append(darabolt1[0])
+    file1.close()
