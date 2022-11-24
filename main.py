@@ -9,7 +9,7 @@ while valasztas!='0':
     if valasztas=='1':
         BevetelKiir()
     elif valasztas=='2':
-        pass
+        KiadasKiir()
     elif valasztas=='3':
         pass
     elif valasztas=='4':
