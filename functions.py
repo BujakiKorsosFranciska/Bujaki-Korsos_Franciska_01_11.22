@@ -47,6 +47,10 @@ def ujKiadas():
     system('cls')
     print('ÚJ EREDMÉNY')
     bekertMegnevezés=input('Kiadás megnevezése: ')
-    bekertOsszeg=input('Összeg: ')        
+    bekertOsszeg=input('Összeg: ')  
+    kiadasok.append(bekertMegnevezés,bekertOsszeg)      
     #kiadasMentes(bekertMegnevezes,bekertOsszeg)
 
+def kiadasMentes():
+    file1=open(kiadas,'a',encoding='utf-8')
+    file1.write(f'\n')
