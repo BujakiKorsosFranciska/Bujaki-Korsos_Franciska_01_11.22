@@ -1,4 +1,4 @@
-from data import bevetelek, kiadasok
+from data import *
 from os import system
 kiadas='kiadasok.txt'
 bevetel='bevetelek.txt'
@@ -29,3 +29,7 @@ def BevetelBetoltes():
         darabolt2=row.strip().split(';')
         bevetelek.append(darabolt2[0])
     file2.close()
+
+def BevetelKiir():
+    for i in range(0,len(bevetelek)):
+        print(f'\t{bevetelek[i]} Ft')
