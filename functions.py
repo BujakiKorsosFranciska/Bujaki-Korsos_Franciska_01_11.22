@@ -22,3 +22,10 @@ def KiadasBetoltes():
         darabolt1=row.strip().split(';')
         kiadasok.append(darabolt1[0])
     file1.close()
+
+def BevetelBetoltes():
+    file2=open(bevetel, 'r', encoding='utf-8')
+    for row in file2:
+        darabolt2=row.strip().split(';')
+        bevetelek.append(darabolt2[0])
+    file2.close()
