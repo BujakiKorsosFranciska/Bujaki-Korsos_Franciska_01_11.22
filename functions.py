@@ -43,7 +43,8 @@ def BevetelKiir():
 def KiadasKiir():
     system('cls')
     print('KIADÁSOK')
-    print(kiadasok)
+    for i in range(0,len(kiadasokNev)):
+        print(f'\t{kiadasokNev[i]}: {kiadasokOssz[i]} Ft')
     input()
 
 def ujKiadas():
