@@ -11,7 +11,7 @@ while valasztas!='0':
     elif valasztas=='2':
         KiadasKiir()
     elif valasztas=='3':
-        pass
+        ujKiadas()
     elif valasztas=='4':
         pass
     elif valasztas=='5':

@@ -50,11 +50,14 @@ def KiadasKiir():
 def ujKiadas():
     system('cls')
     print('ÚJ EREDMÉNY')
-    bekertMegnevezés=input('Kiadás megnevezése: ')
-    bekertOsszeg=input('Összeg: ')  
-    kiadasok.append(bekertMegnevezés,bekertOsszeg)      
-    #kiadasMentes(bekertMegnevezes,bekertOsszeg)
+    ujKiadasNev=input('Nevezze meg a kiadást: ')
+    ujKiadasOssz=input('Adja meg az összeget: ')
+    kiadasokNev.append(ujKiadasNev)
+    kiadasokOssz.append(ujKiadasOssz)
+    kiadasMentes(ujKiadasNev,ujKiadasOssz)
+    input('Sikeresen hozzá adva a listához')
 
-def kiadasMentes():
+def kiadasMentes(ujKiadas):
     file1=open(kiadas,'a',encoding='utf-8')
-    file1.write(f'\n')
+    file1.write(f'\n{ujKiadas[0]}: {ujKiadas[1]} Ft')
+    file1.close()
