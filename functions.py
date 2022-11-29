@@ -36,7 +36,8 @@ def BevetelBetoltes():
 def BevetelKiir():
     system('cls')
     print('BEVÉTELEK')
-    print(bevetelek)
+    for i in range(0,len(bevetelekNev)):
+        print(f'\t{bevetelekNev[i]}: {bevetelekOssz[i]} Ft')
     input()
 
 def KiadasKiir():
