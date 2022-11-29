@@ -49,7 +49,7 @@ def KiadasKiir():
 
 def ujKiadas():
     system('cls')
-    print('ÚJ EREDMÉNY')
+    print('ÚJ KIADÁS')
     ujKiadasNev=input('Nevezze meg a kiadást: ')
     ujKiadasOssz=input('Adja meg az összeget: ')
     kiadasokNev.append(ujKiadasNev)
@@ -61,3 +61,18 @@ def kiadasMentes(ujKiadas):
     file1=open(kiadas,'a',encoding='utf-8')
     file1.write(f'\n{ujKiadas[0]}: {ujKiadas[1]} Ft')
     file1.close()
+
+def ujBevtel():
+    system('cls')
+    print('ÚJ BEVÉTEL')
+    ujBevtelNev=input('Nevezze meg a bevételt: ')
+    ujBevetelOssz=input('Adja meg az összeget: ')
+    bevetelekNev.append(ujBevtelNev)
+    bevetelekOssz.append(ujBevetelOssz)
+    bevetelMentes(ujBevtelNev,ujBevetelOssz)
+    input('Sikeresen hozzá adva a listához')
+
+def bevetelMentes():
+    file2=open(bevetel,'a',encoding='utf-8')
+    file2.write(f'\n{ujBevtel[0]}: {ujBevtel[1]} Ft')
+    file2.close()

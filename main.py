@@ -13,7 +13,7 @@ while valasztas!='0':
     elif valasztas=='3':
         ujKiadas()
     elif valasztas=='4':
-        pass
+        ujBevtel()
     elif valasztas=='5':
         pass
     elif valasztas=='6':
