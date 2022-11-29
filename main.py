@@ -18,8 +18,4 @@ while valasztas!='0':
         kiadasTorles()
     elif valasztas=='6':
         pass
-    elif valasztas=='7':
-        pass
-    elif valasztas=='8':
-        pass
     

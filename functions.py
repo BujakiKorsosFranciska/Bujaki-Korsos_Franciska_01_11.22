@@ -13,8 +13,6 @@ def menu():
     print('\t 4 - Új bevétel felvétele')
     print('\t 5 - Kiadás törlése')
     print('\t 6 - Bevétel törlése')
-    print('\t 7 - Kiadások összesen')
-    print('\t 8 - Bevételek összesen')
     return input('Választás: ')
 
 def KiadasBetoltes():
