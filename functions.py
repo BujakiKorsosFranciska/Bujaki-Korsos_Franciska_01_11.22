@@ -92,3 +92,21 @@ def mentKTorl():
             file1.write('\n')
         file1.write(f'{kiadasokNev[i]}: {kiadasokOssz[i]} Ft')
     file1.close()
+
+def bevetelTorles():
+    system('cls')
+    print('BEVÉTEL TÖRLÉSE')
+    BevetelKiir()
+    toroltB=input('\nMelyik bevételt töröljük?: ')
+    bevetelekNev.pop(toroltB-1)
+    bevetelekOssz.pop(toroltB-1)
+    mentBTorl()
+    input('Sikeres törlés')
+
+def mentBTorl():
+    file2=open(bevetel,'w',encoding='utf-8')
+    for i in range(len(bevetelekNev)):
+        if i>0:
+            file2.write('\n')
+        file2.write(f'{bevetelekNev[i]}: {bevetelekOssz[i]} Ft')
+    file2.close()

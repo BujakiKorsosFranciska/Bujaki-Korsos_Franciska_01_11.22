@@ -17,5 +17,5 @@ while valasztas!='0':
     elif valasztas=='5':
         kiadasTorles()
     elif valasztas=='6':
-        pass
+        bevetelTorles()
     
