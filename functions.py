@@ -21,14 +21,16 @@ def KiadasBetoltes():
     file1=open(kiadas, 'r', encoding='utf-8')
     for row in file1:
         darabolt1=row.strip().split(';')
-        kiadasok.append(darabolt1[0])
+        kiadasokNev.append(darabolt1[0])
+        kiadasokOssz.append(float(darabolt1[1]))
     file1.close()
 
 def BevetelBetoltes():
     file2=open(bevetel, 'r', encoding='utf-8')
     for row in file2:
         darabolt2=row.strip().split(';')
-        bevetelek.append(darabolt2[0])
+        bevetelekNev.append(darabolt2[0])
+        bevetelekOssz.append(float(darabolt2[1]))
     file2.close()
 
 def BevetelKiir():

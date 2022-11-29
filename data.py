@@ -1,2 +1,4 @@
-bevetelek=[]
-kiadasok=[]
+bevetelekNev=[]
+bevetelekOssz=[]
+kiadasokNev=[]
+kiadasokOssz=[]
