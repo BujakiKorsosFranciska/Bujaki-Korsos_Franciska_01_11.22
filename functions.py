@@ -76,3 +76,21 @@ def bevetelMentes():
     file2=open(bevetel,'a',encoding='utf-8')
     file2.write(f'\n{ujBevtel[0]}: {ujBevtel[1]} Ft')
     file2.close()
+
+def kiadasTorles():
+    system('cls')
+    print('KIADÁS TÖRLÉSE')
+    KiadasKiir()
+    toroltK=input('\nMelyik kiadást töröljük?: ')
+    kiadasokNev.pop(toroltK-1)
+    kiadasokOssz.pop(toroltK-1)
+    mentKTorl()
+    input('Sikeres törlés')
+
+def mentKTorl():
+    file1=open(kiadas,'w',encoding='utf-8')
+    for i in range(len(kiadasokNev)):
+        if i>0:
+            file1.write('\n')
+        file1.write(f'{kiadasokNev[i]}: {kiadasokOssz[i]} Ft')
+    file1.close()
