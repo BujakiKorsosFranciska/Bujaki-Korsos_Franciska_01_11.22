@@ -52,7 +52,7 @@ def ujKiadas():
     ujKiadasOssz=input('Adja meg az összeget: ')
     kiadasokNev.append(ujKiadasNev)
     kiadasokOssz.append(ujKiadasOssz)
-    kiadasMentes(ujKiadasNev,ujKiadasOssz)
+    kiadasMentes(ujKiadasNev)
     input('Sikeresen hozzá adva a listához')
 
 def kiadasMentes(ujKiadas):
@@ -67,7 +67,7 @@ def ujBevtel():
     ujBevetelOssz=input('Adja meg az összeget: ')
     bevetelekNev.append(ujBevtelNev)
     bevetelekOssz.append(ujBevetelOssz)
-    bevetelMentes(ujBevtelNev,ujBevetelOssz)
+    bevetelMentes(ujBevtelNev)
     input('Sikeresen hozzá adva a listához')
 
 def bevetelMentes():
