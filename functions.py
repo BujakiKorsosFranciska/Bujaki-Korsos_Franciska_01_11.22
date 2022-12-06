@@ -52,7 +52,7 @@ def ujKiadas():
     ujKiadasOssz=input('Adja meg az összeget: ')
     kiadasokNev.append(ujKiadasNev)
     kiadasokOssz.append(ujKiadasOssz)
-    kiadasMentes(ujKiadasNev)
+    kiadasMentes()
     input('Sikeresen hozzá adva a listához')
 
 def kiadasMentes():
@@ -67,12 +67,12 @@ def ujBevtel():
     ujBevetelOssz=input('Adja meg az összeget: ')
     bevetelekNev.append(ujBevtelNev)
     bevetelekOssz.append(ujBevetelOssz)
-    bevetelMentes(ujBevtelNev)
+    bevetelMentes(ujBevtelNev,ujBevetelOssz)
     input('Sikeresen hozzá adva a listához')
 
-def bevetelMentes(ujBevtel):
+def bevetelMentes(ujBevtel,ujBevetelOssz):
     file2=open(bevetel,'a',encoding='utf-8')
-    file2.write(f'\n{ujBevtel[0]}: {ujBevtel[1]} Ft')
+    file2.write(f'\n{ujBevtel}: {ujBevetelOssz} Ft')
     file2.close()
 
 def kiadasTorles():
