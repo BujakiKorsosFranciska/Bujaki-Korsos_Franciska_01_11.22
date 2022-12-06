@@ -70,7 +70,7 @@ def ujBevtel():
     bevetelMentes(ujBevtelNev)
     input('Sikeresen hozzá adva a listához')
 
-def bevetelMentes():
+def bevetelMentes(ujBevtel):
     file2=open(bevetel,'a',encoding='utf-8')
     file2.write(f'\n{ujBevtel[0]}: {ujBevtel[1]} Ft')
     file2.close()
