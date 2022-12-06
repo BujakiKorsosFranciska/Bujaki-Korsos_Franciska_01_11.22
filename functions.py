@@ -55,7 +55,7 @@ def ujKiadas():
     kiadasMentes(ujKiadasNev)
     input('Sikeresen hozzá adva a listához')
 
-def kiadasMentes(ujKiadas):
+def kiadasMentes():
     file1=open(kiadas,'a',encoding='utf-8')
     file1.write(f'\n{ujKiadas[0]}: {ujKiadas[1]} Ft')
     file1.close()
